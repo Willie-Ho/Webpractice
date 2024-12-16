@@ -1,9 +1,17 @@
-p
+.food
 {
-    color: red;
-    background-color: brown;
+    color: rebeccapurple;
 }
-h2
+.human
 {
-    color: aqua;
+    color: chartreuse;
+}
+.background-grey
+{
+    background-color: grey;
+}
+#css-h1
+{
+    color: black;
+    background-color: coral;
 }
