@@ -1,0 +1,17 @@
+/* 更多搜尋w3c css selector */
+ul li
+{
+    background-color: grey;
+}
+[type]
+{
+    background-color: cadetblue;
+}
+[href]
+{
+    background-color: coral;
+}
+h1:hover
+{
+    background-color: deeppink;
+}
