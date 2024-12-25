@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>測驗</title>
+        <style>
+            button{
+                font-size:25px;
+                margin-right:10px;
+            }
+            p{
+                font-size: 25px;
+                display: inline-block;
+                margin-right:10px;
+            }
+            img{
+                height: 200px;
+                display: block;
+                margin-top:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="
+            console.log(`購物車總額 : ${totalPrice}`);
+        ">購物車總額</button>
+        <button onclick="
+            console.log('清空購物車');
+            totalPrice = 0;
+            console.log(`購物車總額 : ${totalPrice}`);
+        ">清空購物車</button>
+
+        <img src="product_image1.jpg">
+        <p>$100</p>
+        <button onclick="
+            totalPrice += 100;
+            console.log(`購物車總額 : ${totalPrice}`);
+        ">加入購物車</button>
+
+        <img src="product_image2.jpg">
+        <p>$200</p>
+        <button onclick="
+            totalPrice += 200;
+            console.log(`購物車總額 : ${totalPrice}`);
+        ">加入購物車</button>
+        
+
+        <script>
+            let totalPrice = 0;
+            let age = 25;
+            let height = 172;
+            let des = `金城武今年${age}歲 身高${height}公分`
+            // console.log(des);
+            let products =
+            {
+                productNum: 0,
+                product1: {
+                    num: 0,
+                    name: "海底撈泡麵",
+                    price: "100",
+                },
+                product2: {
+                    num: 0,
+                    name: "養氣人蔘",
+                    price: "200",
+                }
+            }
+
+            // const jsonProducts = JSON.stringify(products);
+            // localStorage.setItem("cart", jsonProducts);
+            // let cart1 = localStorage.getItem("cart");
+            // console.log(cart1);
+            localStorage.removeItem("price");
+            localStorage.removeItem("cart");
+            
+            // console.log(JSON.parse(jsonProducts));
+            
+
+            // localStorage.setItem("price", 1000);
+            // const num = localStorage.getItem("price");
+            // console.log(num);
+        </script>
+    </body>
+</html>
