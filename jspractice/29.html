@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>測驗</title>
+        <link rel="stylesheet" href="29.css">
+    </head>
+    <body>
+        <button onclick="
+            subscribeButton()
+        ">訂閱</button>
+
+        <script>
+            function subscribeButton(){
+                let buttonElement = document.querySelector("button");
+                if (buttonElement.innerHTML === "訂閱"){
+                    buttonElement.innerHTML = "已訂閱";
+                }
+                else{
+                    buttonElement.innerHTML = "訂閱";
+                }
+            }
+        </script>
+    </body>
+</html>
