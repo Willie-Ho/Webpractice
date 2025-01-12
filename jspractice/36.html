@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input class="productName" placeholder="請輸入商品名稱">
+    <button onclick="
+        addProduct();
+        showProduct();
+    ">新增</button>
+    <div>
+
+    </div>
+
+    <script>
+        let product = [];
+        function addProduct(){
+            let prodcutName = document.querySelector(".productName");
+            product.push(prodcutName.value);
+            prodcutName.value = "";
+        }
+
+        function showProduct(){
+            let productCount = product.length;
+            let html = "";
+            for (let i=0; i<productCount; i++){
+                 html += `<p>${product[i]}</p>`;
+            }
+            document.querySelector(`div`).innerHTML = html;
+        }
+    </script>
+</body>
+</html>
